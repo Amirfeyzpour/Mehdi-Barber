@@ -6,7 +6,9 @@ const About = () => {
     return ( <div>
         <SectionA/>
         <SectionB/>
+        <div  className="py-20 bg-black">
         <SectionC/>
+        </div>
     </div> );
 }
  

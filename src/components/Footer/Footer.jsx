@@ -5,223 +5,115 @@ import footerBg from "../../../public/assests/footer.jpg";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black text-white">
-
+    <footer className="relative w-full bg-black text-white  ">
       {/* Footer Image */}
-      <div className="relative w-full h-150 md:h-162 max-h-175 overflow-hidden">
-
+      <div className="relative w-full min-h-[600px] md:min-h-[650px] overflow-hidden ">
         {/* Background */}
         <img
           src={footerBg}
           alt="Barbershop"
-          className="
-            absolute
-            inset-0
-            w-full
-            h-full
-            object-cover
-            object-center
-            grayscale
-          "
+          className="absolute inset-0 w-full h-full object-cover object-center grayscale"
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/55" />
-
+        <div className="absolute inset-0 bg-black/60" />
 
         {/* Content */}
-        <div dir="ltr" className="relative z-10 h-full flex items-center">
-
-          <div className="w-[88%] max-w-6xl mx-auto">
-
+        <div
+          dir="ltr"
+          className="relative z-10 min-h-[600px] md:min-h-[650px] flex items-center py-12 sm:py-16"
+        >
+          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Logo */}
-            <Link
-              to="/"
-              className="inline-flex items-center gap-3 mb-5"
-            >
-              <h2 className="
-                text-3xl
-                md:text-5xl
-                font-bold
-                tracking-[0.18em]
-              ">
+            <Link to="/" className="inline-flex items-center mb-5">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-[0.18em]">
                 BARBER
               </h2>
-
-              
             </Link>
 
-
             {/* Description */}
-            <p className="
-              text-gray-200
-              text-sm
-              md:text-base
-              leading-7
-              max-w-md
-              mb-8
-            ">
+            <p
+              dir="rtl"
+              className="text-gray-200 text-sm md:text-base leading-7 max-w-md mb-8 text-left"
+            >
               استایل شما، امضای شماست.
               <br />
               تجربه‌ای متفاوت از یک اصلاح حرفه‌ای.
             </p>
 
-
             {/* Information */}
-            <div className="space-y-5 text-sm md:text-base">
-
+            <div className="space-y-6 text-sm md:text-base">
               {/* Address */}
-              <div className="ml-0 md:ml-4">
-
-                <p className="
-                  text-gray-400
-                  text-xs
-                  tracking-[0.2em]
-                  mb-1
-                ">
+              <div>
+                <p className="text-gray-400 text-xs tracking-[0.2em] mb-2">
                   ADDRESS
                 </p>
 
-                <p>
+                <p dir="rtl" className="text-gray-100 text-left">
                   تهران، میدان پونک
                 </p>
-
               </div>
 
-
               {/* Phone */}
-              <div className="ml-8 md:ml-20">
-
-                <p className="
-                  text-gray-400
-                  text-xs
-                  tracking-[0.2em]
-                  mb-1
-                ">
+              <div>
+                <p className="text-gray-400 text-xs tracking-[0.2em] mb-2">
                   PHONE
                 </p>
 
-                <div className="
-                  border
-                  border-white/30
-                  w-fit
-                  px-5
-                  py-2
-                  mt-3
-                  bg-black/40
-                  backdrop-blur-sm
-                  rounded-xl
-                ">
-                  <a
-                    href="tel:+09195756500"
-                    className="
-                      tracking-wider
-                      hover:text-gray-100
-                    
-                      transition
-                    "
-                  >
-                    09195756500
-                  </a>
-                </div>
-
+                <a
+                  href="tel:+989195756500"
+                  dir="ltr"
+                  className="inline-flex items-center border border-white/30 px-5 py-2 mt-1 bg-black/40 backdrop-blur-sm rounded-xl tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
+                >
+                  09195756500
+                </a>
               </div>
 
-
               {/* Working Hours */}
-              <div className="ml-16 md:ml-40">
-
-                <p className="
-                  text-gray-400
-                  text-xs
-                  tracking-[0.2em]
-                  mb-1
-                ">
+              <div>
+                <p className="text-gray-400 text-xs tracking-[0.2em] mb-2">
                   WORKING HOURS
                 </p>
 
-                <p className="pl-7">
-                  همه روزه  — ۱۰:۰۰ تا ۲۲:۰۰
+                <p dir="rtl" className="text-gray-100 text-left">
+                  همه روزه — ۱۰:۰۰ تا ۲۲:۰۰
                 </p>
-
               </div>
-
             </div>
-
 
             {/* Booking */}
             <Link
               to="/contact"
-              className="
-                inline-block
-                mt-8
-                border
-                border-white
-                px-7
-                py-3
-                text-sm
-                tracking-wider
-                hover:bg-white
-                hover:text-black
-                transition-all
-                duration-300
-              "
+              className="inline-flex items-center justify-center mt-8 border border-white px-7 py-3 text-sm tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
             >
               رزرو نوبت
             </Link>
-
           </div>
-
         </div>
       </div>
-
 
       {/* Bottom Bar */}
-      <div className="
-        bg-black
-        border-t
-        border-white/10
-        px-[6%]
-        py-5
-        flex
-        flex-col
-        md:flex-row
-        justify-between
-        items-center
-        gap-4
-      ">
+      <div className="bg-black border-t border-white/10 px-4 sm:px-6 lg:px-8 py-5">
+        <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-xs text-center md:text-left">
+            © 2026 BARBER — All Rights Reserved - AMIRREZA FEIZPOUR
+          </p>
 
-        <p className="text-gray-500 text-xs">
-          © 2026 BARBER — All Rights Reserved - AMIRREZA FEIZPOUR
-        </p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs text-gray-400">
+            <a href="#" className="hover:text-white transition-colors">
+              Instagram
+            </a>
 
-        <div className="flex gap-6 text-xs text-gray-400">
+            <a href="#" className="hover:text-white transition-colors">
+              Telegram
+            </a>
 
-          <a
-            href="#"
-            className="hover:text-white transition"
-          >
-            Instagram
-          </a>
-
-          <a
-            href="#"
-            className="hover:text-white transition"
-          >
-            Telegram
-          </a>
-
-          <a
-            href="#"
-            className="hover:text-white transition"
-          >
-            WhatsApp
-          </a>
-
+            <a href="#" className="hover:text-white transition-colors">
+              WhatsApp
+            </a>
+          </div>
         </div>
-
       </div>
-
     </footer>
   );
 };

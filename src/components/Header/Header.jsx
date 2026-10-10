@@ -107,7 +107,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className="text-sm transition hover:text-amber-400"
             >
-              درباره ما
+              درباره من
             </Link>
 
             <Link
